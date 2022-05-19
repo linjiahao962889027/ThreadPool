@@ -2,12 +2,12 @@
 #include <vector>
 #include <chrono>
 
-#include "ThreadPool.h"
+#include "ThreadPool.hpp"
 
 int main()
 {
     
-    ThreadPool pool(4);
+    ThreadPool::ThreadPool pool(4);
     std::vector< std::future<int> > results;
 
     for(int i = 0; i < 8; ++i) {
